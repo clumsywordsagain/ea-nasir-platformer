@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://do630wiegvyvx"
+path="res://.godot/imported/The Epic Of Gilgamesh In Sumerian.mp3-27d53b36a2e0eea02b32122280332b62.mp3str"
+
+[deps]
+
+source_file="res://The Epic Of Gilgamesh In Sumerian.mp3"
+dest_files=["res://.godot/imported/The Epic Of Gilgamesh In Sumerian.mp3-27d53b36a2e0eea02b32122280332b62.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

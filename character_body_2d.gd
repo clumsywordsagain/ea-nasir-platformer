@@ -21,5 +21,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+	
+	# flipping character body according to direction of movement
+	if direction != 0:
+		$Sprite2D.flip_h = (direction < 0)
+
 
 	move_and_slide()

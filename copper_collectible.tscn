@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b15rsxvq0mg6j"]
+
+[ext_resource type="Script" uid="uid://bvoywb3qbxown" path="res://copper_collectible.gd" id="1_1psvq"]
+[ext_resource type="Texture2D" uid="uid://cg4ymjn5v75uj" path="res://copper.png" id="2_wuy2d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5viw"]
+size = Vector2(53, 31)
+
+[node name="copper collectible" type="Area2D" unique_id=925916275]
+script = ExtResource("1_1psvq")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=782179233]
+position = Vector2(311, 428)
+scale = Vector2(0.25000006, 0.19921869)
+texture = ExtResource("2_wuy2d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=356217310]
+position = Vector2(311.5, 428.5)
+shape = SubResource("RectangleShape2D_p5viw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
