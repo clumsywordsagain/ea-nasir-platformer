@@ -14,7 +14,6 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("left", "right")
 	if direction:
@@ -28,3 +27,8 @@ func _physics_process(delta: float) -> void:
 
 
 	move_and_slide()
+
+
+func _on_fallzone_body_entered(body: Node2D) -> void:
+	if body.name == "player": 
+		get_tree().reload_current_scene()

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://s0so6onrrv12"]
+
+[node name="end screen" type="Node2D" unique_id=406045017]
+
+[node name="Label" type="Label" parent="." unique_id=89392841]
+offset_left = 431.0
+offset_top = 286.0
+offset_right = 746.0
+offset_bottom = 311.0
+text = "you found seven copper ingots! yay!"
+horizontal_alignment = 1

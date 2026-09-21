@@ -7,8 +7,8 @@
 size = Vector2(53, 31)
 
 [node name="copper collectible" type="Area2D" unique_id=925916275]
+position = Vector2(139, -8)
 script = ExtResource("1_1psvq")
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=782179233]
 position = Vector2(311, 428)
